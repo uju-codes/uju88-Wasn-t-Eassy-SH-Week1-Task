@@ -1,0 +1,99 @@
+.odin{
+    height: 100vh;
+    margin: 0;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.leaf{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+}
+
+.text{
+    height: 100vh;
+    margin: 0;
+    width: 60%;
+    background-color: rgb(255, 242, 127);
+
+}
+
+.container{
+    display: flex;
+}
+
+body{
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+    margin: 0;
+    flex-wrap: wrap;
+
+
+}
+.form{
+    background-color: aliceblue;
+    align-content: center;
+    margin: 0;
+    width: 60%;
+    
+}
+.button input{
+    outline: none;
+    margin: 10px;
+    border: none;
+    background-color: rgb(0, 128,0);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+   
+}
+.odin p.accreditation {
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+    width: 39%;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-weight: 200;
+  }
+  .form .form-grid input{
+    width: 50%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid goldenrod;
+  }
+  .form .form-grid input:focus,
+  .form .form-grid input:valid{
+    border-color: lawngreen;
+  }
+  .form .form-grid label{
+    font-size: 10px;
+  }
+
+
+@media (min-width:600px){
+    .container{
+        max-width: 100%;
+    }
+    .form .form-grid{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
